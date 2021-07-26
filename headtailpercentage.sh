@@ -13,8 +13,8 @@ else
 heads=$[$heads+1]
 fi
 done
-perheads=$[$heads*100/21]
-echo "Percentage of Heads: $perheads"
-pertails=$[$tails*100/21]
-echo "Percentage of Tails: $pertails"
+perhead[heads]=$[$heads*100/21]
+echo "Percentage of Heads: ${perhead[@]}"
+pertail[tails]=$[$tails*100/21]
+echo "Percentage of Tails: ${pertail[@]}"
 
